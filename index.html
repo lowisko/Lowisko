@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Łowisko komercyjne Przybyszowy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #eef2f3;
+    }
+    header {
+      position: relative;
+      height: 50vh;
+      min-height: 300px;
+      background: url('20250615_150503.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      overflow: hidden;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0) 40%, #eef2f3 100%);
+    }
+    header h1 {
+      position: relative;
+      font-size: 3em;
+      margin: 0;
+      line-height: 1.2;
+      z-index: 1;
+      top: -10%;
+    }
+    .section {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: -100px auto 40px;
+      padding: 20px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+    .pricing {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      padding: 40px;
+    }
+    .pricing .text {
+      flex: 1 1 300px;
+    }
+    .pricing .text h2 {
+      margin-top: 0;
+      color: #024a22;
+    }
+    .pricing .text ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+    .pricing .text ul li {
+      margin: 6px 0;
+      font-weight: 600;
+    }
+    .pricing .img {
+      position: relative;
+      flex: 1 1 300px;
+      max-width: 400px;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+    .pricing .img img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .pricing .img::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+      background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    }
+    .reservation {
+      position: relative;
+      margin: 40px;
+      border-radius: 16px;
+      overflow: hidden;
+      height: 280px;
+      background: url('20250615_152525.jpg') center/cover no-repeat;
+    }
+    .reservation::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.7) 100%);
+    }
+    .reservation .content {
+      position: relative;
+      color: white;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      z-index: 1;
+    }
+    .reservation .content h2 {
+      margin: 0 0 10px;
+      font-size: 2.2em;
+    }
+    .reservation .content p {
+      margin: 4px 0;
+      font-size: 1.1em;
+    }
+    .cards {
+      display: flex;
+      gap: 20px;
+      padding: 0 20px 40px;
+    }
+    .card {
+      flex: 1;
+      height: 200px;
+      border-radius: 12px;
+      background-size: cover;
+      background-position: center;
+    }
+    .info {
+      display: flex;
+      overflow: hidden;
+      margin: 0 20px 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+    .info .text {
+      flex: 1;
+      padding: 30px;
+      background: white;
+    }
+    .info .text h2 {
+      margin-top: 0;
+      color: #024a22;
+    }
+    .info .image {
+      flex: 1;
+      background: url('20250615_152025.jpg') center/cover no-repeat;
+      mask-image: linear-gradient(to right, rgba(0,0,0,1) 60%, rgba(0,0,0,0));
+      -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 60%, rgba(0,0,0,0));
+    }
+    .map {
+      margin: 0 20px 40px;
+    }
+    .map iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+      border-radius: 16px;
+    }
+    @media (max-width: 768px) {
+      .section {
+        margin: -80px auto 20px;
+      }
+      .pricing, .info { flex-direction: column; }
+      .reservation { height: 220px; }
+      .cards { flex-direction: column; }
+      .card { height: 180px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Prywatne łowisko komercyjne<br>Przybyszowy</h1>
+  </header>
+
+  <div class="section pricing">
+    <div class="text">
+      <h2>Cennik łowiska</h2>
+      <p>Stawka godzinowa pobytu dla wędkarza – <strong>10 zł/h</strong><br>Dzieci do 13 roku – wstęp darmowy.</p>
+      <p>Możliwość zakupu złowionych ryb:</p>
+      <ul>
+        <li>Szczupak – 30 zł/kg</li>
+        <li>Karp – 22 zł/kg</li>
+        <li>Amur – 22 zł/kg</li>
+        <li>Okoń – 10 zł/kg</li>
+        <li>Płoć - 10 zł/kg</li>
+        <li>Karaś – 10 zł/kg</li>
+      </ul>
+    </div>
+    <div class="img">
+      <img src="20250615_150522.jpg" alt="Staw rybny">
+    </div>
+  </div>
+
+  <div class="reservation">
+    <div class="content">
+      <div>
+        <h2>Rezerwacja</h2>
+        <p>Pobyt prosimy rezerwować telefonicznie:</p>
+        <p><strong>+48 606 217 703</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cards">
+    <div class="card" style="background-image:url('20250615_151332.jpg')"></div>
+    <div class="card" style="background-image:url('20250615_151335.jpg')"></div>
+    <div class="card" style="background-image:url('20250615_152023.jpg')"></div>
+  </div>
+
+  <div class="info">
+    <div class="text">
+      <h2>Informacje</h2>
+      <p><strong>Godziny otwarcia:</strong> pon.-niedz. 7:00–22:00</p>
+      <p><strong>Adres:</strong> Przybyszowy 26-200 (przy torze motocrossowym)</p>
+    </div>
+    <div class="image"></div>
+  </div>
+
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1062.5266955295194!2d20.297614963205444!3d51.18082693349486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spl!2spl!4v1750511949868!5m2!1spl!2spl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</body>
+</html>
